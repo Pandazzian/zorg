@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zorg.iml" filepath="$PROJECT_DIR$/.idea/modules/zorg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zorg_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zorg_main.iml" group="zorg" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zorg_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zorg_test.iml" group="zorg" />
+    </modules>
+  </component>
+</project>
