@@ -37,6 +37,8 @@ public class Room implements Informative{
     public boolean isEmpty(){
         return !this.hasLoot() && !this.hasMonster();
     }
+
+    @Override
     public void getInfo() {
         System.out.println(String.format("Room %s -------------", this.roomName));
         if (this.isEmpty()) {

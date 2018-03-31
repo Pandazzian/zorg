@@ -1,9 +1,11 @@
 package monster;
 
+import interfaces.Informative;
+
 /**
  * Created by pandazzian on 28/1/2018 AD.
  */
-public class Monster {
+public class Monster implements Informative{
     String monsterName;
     int HP,attackPoint;
 
@@ -12,6 +14,7 @@ public class Monster {
         this.attackPoint=attackPoint;
         this.monsterName=monsterName;
     }
+    @Override
     public void getInfo(){
         if(this.isAlive()){
             System.out.println(String.format("%s",this.monsterName ));

@@ -1,9 +1,10 @@
 package items;
 
+import interfaces.Informative;
 import monster.Monster;
 import player.Player;
 
-public class Weapon implements Item{
+public class Weapon implements Item, Informative{
 
     private String weaponName;
     private int attackPoint;
