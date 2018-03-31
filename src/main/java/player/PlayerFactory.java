@@ -1,3 +1,7 @@
+package player;
+
+import player.Player;
+
 import java.util.Scanner;
 
 /**
@@ -12,29 +16,31 @@ public class PlayerFactory {
         return player;
     }
 
-    private static void initializeNewPlayer(){
+    private static void initializeNewPlayer() {
         Scanner sc = new Scanner(System.in);
-        String name,race,gender;
+        String name, race, gender;
         String ans;
 
         System.out.print("Alright welcome to the game.\nFirst I would like to know your name.\n>");
         name = sc.nextLine();
-        System.out.print("Ok "+name+"! now what is your race? eg. orc,african american,ceiling lamp and etc.\n>");
+        System.out.print(
+                String.format("Ok %s! now what is your race? eg. orc,african american,ceiling lamp and etc.\n>", name));
         race = sc.nextLine();
         System.out.print("alright!... and your gender?\n>");
-        gender=sc.nextLine();
-        System.out.println("Okay! so you are a "+gender+" "+race+" name "+name+".");
-        for(;;){
+        gender = sc.nextLine();
+        System.out.println(String.format("Okay! so you are a %s %s name %s.", gender,race,name));
+        for (; ; ) {
             System.out.print("is this correct? y/n\n>");
-            ans=sc.nextLine();
-            if (ans.equals("n")){
+            ans = sc.nextLine();
+            System.out.println(ans);
+            if (ans.equals("n")) {
                 initializeNewPlayer();
                 break;
             }
-            if (ans.equals("y")){
+            if (ans.equals("y")) {
                 break;
             }
         }
-        player.addInfo(name,race,gender);
+        player.addInfo(name, race, gender);
     }
 }
